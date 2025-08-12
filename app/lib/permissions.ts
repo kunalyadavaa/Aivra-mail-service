@@ -28,10 +28,8 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
     PERMISSIONS.MANAGE_EMAIL,
     PERMISSIONS.MANAGE_WEBHOOK,
   ],
-  // 为了让默认注册用户也可以正常使用邮箱收发功能，给予基础邮箱管理权限
-  [ROLES.CIVILIAN]: [
-    PERMISSIONS.MANAGE_EMAIL,
-  ],
+  // 普通用户（CIVILIAN）不具备任何管理权限
+  [ROLES.CIVILIAN]: [],
 } as const;
 
 export function hasPermission(userRoles: Role[], permission: Permission): boolean {
