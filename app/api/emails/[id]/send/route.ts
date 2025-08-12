@@ -43,7 +43,9 @@ export async function POST(
   try {
     // 验证用户身份
     const session = await auth()
-    if (!session?.user?.email) {
+    // 之前使用 session.user.email 来判断授权，但使用本地注册用户时 email 可能为空
+    // 改为仅判断用户是否已登录（存在 user.id）。
+    if (!session?.user?.id) {
       return NextResponse.json({ error: "未授权" }, { status: 401 })
     }
 
