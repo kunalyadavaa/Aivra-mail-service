@@ -246,7 +246,7 @@ export function LoginForm() {
                   onClick={handleGithubLogin}
                 >
                   <Github className="mr-2 h-4 w-4" />
-                  使用 GitHub 账号登录
+                  Continue with GitHub 
                 </Button>
               </div>
             </TabsContent>
