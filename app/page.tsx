@@ -21,29 +21,30 @@ export default async function Home() {
               <div className="space-y-4">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">
                   <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-purple-600">
-                    MRI University Email System
+                    Aivra Mail Service
                   </span>
                 </h1>
                 <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 tracking-wide">
-                  本系统基于@beilunyang/moemail萌萌哒临时邮箱服务修改
+                  This system is based on Aivra Cloud Service
                 </p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-4 sm:px-0">
                 <FeatureCard
                   icon={<Shield className="w-5 h-5" />}
-                  title="教育至上"
-                  description="天行健，君子以自强不息"
+                  title="24/7 availability "
+                  description="Always accessible, anytime, day or night.
+"
                 />
                 <FeatureCard
                   icon={<Mail className="w-5 h-5" />}
-                  title="即时收件"
-                  description="实时接收邮件通知"
+                  title="Instantly received."
+                  description="Real-time receipt of email notifications"
                 />
                 <FeatureCard
                   icon={<Clock className="w-5 h-5" />}
-                  title="永久有效"
-                  description="一次申请，永久有效"
+                  title="Permanently effective"
+                  description="Once an application, permanent"
                 />
               </div>
 
