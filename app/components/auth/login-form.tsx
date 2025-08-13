@@ -158,7 +158,7 @@ export function LoginForm() {
           Aivra Mail Service
         </CardTitle>
         <CardDescription className="text-center">
-          Aivra MailAivra Mail
+          Aivra 
         </CardDescription>
       </CardHeader>
       <CardContent className="px-6">
@@ -180,7 +180,7 @@ export function LoginForm() {
                         "h-9 pl-9 pr-3",
                         errors.username && "border-destructive focus-visible:ring-destructive"
                       )}
-                      placeholder="用户名"
+                      placeholder="Username"
                       value={username}
                       onChange={(e) => {
                         setUsername(e.target.value)
@@ -204,7 +204,7 @@ export function LoginForm() {
                         errors.password && "border-destructive focus-visible:ring-destructive"
                       )}
                       type="password"
-                      placeholder="密码"
+                      placeholder="Password"
                       value={password}
                       onChange={(e) => {
                         setPassword(e.target.value)
@@ -226,7 +226,7 @@ export function LoginForm() {
                   disabled={loading}
                 >
                   {loading && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}
-                  登录
+                  Login
                 </Button>
 
                 <div className="relative">
@@ -235,7 +235,7 @@ export function LoginForm() {
                   </div>
                   <div className="relative flex justify-center text-xs uppercase">
                     <span className="bg-background px-2 text-muted-foreground">
-                      或者
+                      or
                     </span>
                   </div>
                 </div>
